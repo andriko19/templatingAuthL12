@@ -25,7 +25,7 @@ Route::get('/register', [RegisterController::class, 'index'])->name('register')-
 Route::post('/register', [RegisterController::class, 'actionregister'])->name('register')->middleware('guest');
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate'])->name('login')->middleware('guest');
-// Route::match(['get','post'],'/logout', [LoginController::class, 'logout'])->name('logout');
+Route::match(['get','post'],'/logout', [LoginController::class, 'logout'])->name('logout');
 
 //DASHBOARD
 Route::resource('dashboard', 'DashboardController')->except(['show'])->middleware('auth');
