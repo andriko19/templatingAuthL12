@@ -28,5 +28,5 @@ Route::post('/login', [LoginController::class, 'authenticate'])->name('login')->
 // Route::match(['get','post'],'/logout', [LoginController::class, 'logout'])->name('logout');
 
 //DASHBOARD
-// Route::resource('dashboard', 'DashboardController')->except(['show'])->middleware('auth');
-// Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
+Route::resource('dashboard', 'DashboardController')->except(['show'])->middleware('auth');
+Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
