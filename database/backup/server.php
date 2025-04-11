@@ -1,3 +1,5 @@
+directory : vendor/laravel/framework/src/Illuminate/Foundation/resources/
+copy :
 <?php
 
 $publicPath = getcwd();
