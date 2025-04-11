@@ -68,7 +68,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Stap Clone Project
 
 -   git clone "link project github"
--   open terminal composer install
+-   open terminal -> composer install
 -   php artisan key:generate
 -   setting configuration database
 -   php artisan migrate
