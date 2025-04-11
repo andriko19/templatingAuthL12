@@ -72,4 +72,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   php artisan key:generate
 -   setting configuration database
 -   php artisan migrate
--
+-   replice file .env FILESYSTEM_DISK=local to FILESYSTEM_DISK=public
