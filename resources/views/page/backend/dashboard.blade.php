@@ -267,3 +267,11 @@
 </div>
 {{-- /content --}}
 @endsection
+
+@section('js_per_page')
+{{-- js_per_page --}}
+<!-- Need: Apexcharts -->
+<script src="{{ url('') }}/assets/backend/extensions/apexcharts/apexcharts.min.js"></script>
+<script src="{{ url('') }}/assets/backend/static/js/pages/dashboard.js"></script>
+{{-- end_js_per_page --}}
+@endsection
